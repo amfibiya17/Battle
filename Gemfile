@@ -8,5 +8,6 @@ gem "rspec"
 gem "sinatra"
 gem 'capybara'
 gem 'webrick'
+gem 'launchy'
 
 # gem "rails"
