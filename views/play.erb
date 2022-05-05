@@ -4,9 +4,9 @@
 <h1>Battle!</h1>
 <h2>Sign in to play</h2>
 
-<% if @player_1 %> 
-<p><%= @player_1.name %> vs. <%= @player_2.name %></p>
-<p><%= @player_2.name %>: 100 points</p>
+<% if @game %> 
+<p><%= @game.player_1.name %> vs. <%= @game.player_2.name %></p>
+<p><%= @game.player_2.name %>: <%= @game.player_2.hit_points %> points</p>
 <% end %>
 
 <form action="/names" method="post">
